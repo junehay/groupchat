@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
     <title>group chat</title>
-</head>
+  </head>
 
-<body>
-    <div>
-        div
+  <body>
+    <div id="main">
+      <div id="chat">
+        <!-- 채팅 메시지 영역 -->
+      </div>
+      <div>
+        <input type="text" id="test" placeholder="메시지를 입력해주세요.." />
+        <button onclick="send()">전송</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
